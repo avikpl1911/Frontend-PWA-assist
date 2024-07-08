@@ -29,7 +29,7 @@ const requestPermission = async () => {
   
       if (currentToken) {
         console.log('Current Token:', currentToken);
-        await axios.post('http://localhost:5000/subscribe', { token: currentToken });
+        await axios.post('https://backend-pwa-fsik.onrender.com/subscribe', { token: currentToken });
         console.log('Token sent to server successfully');
       } else {
         console.error('No registration token available. Request permission to generate one.');
