@@ -11,7 +11,7 @@ const AdminPage = () => {
 
     const sendNotification = async () => {
         try {
-            const response = await axios.post('http://localhost:5000/sendNotification', {
+            const response = await axios.post('https://backend-pwa-fsik.onrender.com/sendNotification', {
                 title,
                 message,
                 link,
